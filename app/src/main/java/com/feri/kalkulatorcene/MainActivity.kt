@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,25 +13,25 @@ class MainActivity : AppCompatActivity() {
 
     fun HoferButtonCalled(V : View){
         val intent = Intent(this, CalculationActivity::class.java)
-        intent.putExtra("store", "hofer")
+        intent.putExtra("store", "Hofer")
         startActivity(intent)
     }
 
-    fun MerkatorButtonCalled(V : View){
+    fun MercatorButtonCalled(V : View){
         val intent = Intent(this, CalculationActivity::class.java)
-        intent.putExtra("store", "merkator")
+        intent.putExtra("store", "Mercator")
         startActivity(intent)
     }
 
     fun SparButtonCalled(V : View){
         val intent = Intent(this, CalculationActivity::class.java)
-        intent.putExtra("store", "spar")
+        intent.putExtra("store", "Spar")
         startActivity(intent)
     }
 
     fun TusButtonCalled(V : View){
         val intent = Intent(this, CalculationActivity::class.java)
-        intent.putExtra("store", "tus")
+        intent.putExtra("store", "Tus")
         startActivity(intent)
     }
 }
