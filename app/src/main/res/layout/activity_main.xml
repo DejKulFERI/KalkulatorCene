@@ -13,7 +13,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:text="SPAR"
+        android:onClick="SparButtonCalled"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logotip" />
+        android:src="@drawable/logotip"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -50,6 +53,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:text="HOFER"
+        android:onClick="HoferButtonCalled"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,37 +78,37 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:srcCompat="@drawable/spar" />
+        android:src="@drawable/spar"/>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="131dp"
         android:layout_height="127dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:scaleX="1"
         android:scaleY="1"
+        android:src="@drawable/hofer"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:srcCompat="@drawable/hofer" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="128dp"
         android:layout_height="130dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:scaleX="1.5"
         android:scaleY="1.5"
+        android:src="@drawable/mercator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:srcCompat="@drawable/mercator" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
         android:id="@+id/button5"
@@ -114,6 +118,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:text="MERKATOR"
+        android:onClick="MerkatorButtonCalled"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -128,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/button5"
-        tools:srcCompat="@drawable/tus" />
+        android:src="@drawable/tus"/>
 
     <Button
         android:id="@+id/button6"
@@ -137,7 +142,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:text="TUŠ"
+        android:onClick="TusButtonCalled"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
